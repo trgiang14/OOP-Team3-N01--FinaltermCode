@@ -12,14 +12,12 @@
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
    <top>
       <AnchorPane prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="-2.0" prefHeight="103.0"
-                prefWidth="600.0" style="-fx-background-color: #2196f3;" text="Who are you?" textAlignment="CENTER"
-                textFill="WHITE" textOverrun="CLIP">
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="-2.0" prefHeight="103.0" prefWidth="600.0" style="-fx-background-color: #2196f3;" text="Who are you?" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
             <font>
-               <Font name="System Bold" size="60.0"/>
+               <Font name="System Bold" size="60.0" />
             </font>
             <cursor>
-               <Cursor fx:constant="DEFAULT"/>
+               <Cursor fx:constant="DEFAULT" />
             </cursor>
          </Label>
       </AnchorPane>
@@ -27,18 +25,14 @@
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <AnchorPane layoutX="1.0" prefHeight="299.0" prefWidth="600.0">
-            <ImageView fitHeight="299.0" fitWidth="300.0" layoutX="1.0" opacity="0.25" pickOnBounds="true"
-                       preserveRatio="true">
-               <Image url="@../../../../../../images/cart.png"/>
+            <ImageView fitHeight="299.0" fitWidth="300.0" layoutX="1.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../../../../../../images/cart.png" />
             </ImageView>
-            <ImageView fitHeight="269.0" fitWidth="269.0" layoutX="308.0" layoutY="16.0" opacity="0.25"
-                       pickOnBounds="true" preserveRatio="true">
-               <Image url="@../../../../../../images/avatar.png"/>
+            <ImageView fitHeight="269.0" fitWidth="269.0" layoutX="308.0" layoutY="16.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../../../../../../images/avatar.png" />
             </ImageView>
-            <Button layoutX="108.0" layoutY="122.0" mnemonicParsing="false" onAction="#customerButton"
-                    prefHeight="40.0" prefWidth="120.0" text="Customer"/>
-            <Button layoutX="383.0" layoutY="122.0" mnemonicParsing="false" onAction="#managerButton"
-                    prefHeight="40.0" prefWidth="120.0" text="Manager"/>
+            <Button fx:id="customerButton" layoutX="108.0" layoutY="122.0" mnemonicParsing="false" onAction="#customerButton" prefHeight="40.0" prefWidth="120.0" text="Customer" />
+            <Button fx:id="managerButton" layoutX="383.0" layoutY="122.0" mnemonicParsing="false" onAction="#managerButton" prefHeight="40.0" prefWidth="120.0" text="Manager" />
          </AnchorPane>
       </AnchorPane>
    </left>
